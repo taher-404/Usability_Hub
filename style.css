@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+
+/* !Resets */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary-text-color:#183b56; 
+  --secondary-text-color:#577592;
+  --accent-color:#2294ed;
+  --accent-color-dark:#1d69a3;
+  --padding-inline-section:20px;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-text-color);
+}
+
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5 rem; 
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+
+/* ! utility classes */
+
+.small_bold_text{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.container{
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+  overflow: hidden;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  
+}
+.hover_links{
+  color: var(--primary-text-color);
+  transition: 0.2s ease-out;
+}
+.hover_links:hover{
+  color: var(--accent-color);
+}
+.primary_button{
+  background-color: var(--accent-color);
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: white ;
+  font-weight: 700;
+  box-shadow: 0 0 2px var(--secondary-text-color);
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+.primary_button:hover{
+  background-color: var(--accent-color-dark);
+  color: white ;
+}
+.secondary_button{
+  border: 0.5px solid var(--secondary-text-color);
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 12px 24px;
+  transition: 0.2s ease-out;
+  color: var(--primary-text-color) !important;
+}
+.secondary_button:hover{
+  border-color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+}
+/* !Top banner */
+
+.top_banner{
+  background-color: #4fb3d4;
+  background-image: url(Asses/asset\ 30.png);
+  background-size: 300px;
+}
+.banner_text{
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+/* !nav bar */
+
+.main_nav{
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+}
+.companies_logo img{
+  width: 200px;
+}
+.nav_links{
+  flex-basis: 730px;
+}
+.nav_links ul{
+  justify-content: end;
+  gap: 20px;
+}
+.nav_toggle{
+  display: none;
+}
+
+/* !header section */
+
+header{
+  padding: 50px var(--padding-inline-section) 0;
+}
+.header_section{
+  justify-content: center;
+  gap: 50px;
+}
+.header_left{
+  max-width: 40vw;
+}
+.header_left h1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.header_left .get_started_btn{
+  margin-top: 20px;
+}
+.header_right img{
+  width: 100%;
+}
+
+/* !companies section */
+
+.conmanies_header{
+  text-align: center;
+  margin-block: 30px;
+  color: var(--primary-text-color);
+  font-size: 1.20rem;
+}
+.logos{
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.logo{
+  height: 46px;
+}
+
+/* !features section */
+
+.features_section{
+  padding: 80px var(--padding-inline-section) 0;
+  background-image: url(Asses/asset\ 32.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 180px;
+}
+.features_header{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features_header h2{
+  margin-bottom: 20px;
+}
+.features_area{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+.features_card{
+  flex-direction: column;
+  gap: 10px;
+  max-width: 30%;
+  text-align: center;
+}
+.features_card img{
+  width: 50px;
+}
+
+/* !big features section */
+
+.big_features_section{
+  padding: 30px var(--padding-inline-section) 0;
+}
+.big_feature_container{
+  gap: 30px;
+}
+#important{
+  flex-direction: row-reverse;
+}
+.feature_img img{
+  width: 100%;
+}
+.features_decription{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* !examples section */
+.examples_section{
+  padding: 80px var(--padding-inline-section);
+}
+.examples_header{
+  flex-direction: column;
+  gap: 20px ;
+  text-align: center;
+}
+.examples_area{
+  justify-content: space-between;
+  margin-block: 30px;
+  flex-wrap: wrap;
+}
+.examples_card{
+  flex-basis: 23%;
+  /* width: 23%; */
+  position: relative;
+  background-color: black;
+  height: 300px;
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Asses/asset\ 35.jpeg);
+  background-size: cover;
+  transition: 0.2s ease-out;
+
+}
+.examples_card:hover{
+ box-shadow: 0 0 10px #555454;
+}
+.examples_card:nth-child(2){
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Asses/asset\ 34.jpeg);
+  background-size: cover;
+}
+.examples_card:nth-child(3){
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Asses/asset\ 36.jpeg);
+  background-size: cover;
+}
+.examples_card:nth-child(4){
+  background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(Asses/asset\ 37.jpeg);
+  background-size: cover;
+}
+.examples_card h3{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  
+}
+
+/* !cta section */
+
+.cta_section{
+  background-color: #183b56;
+  padding: 120px var(--padding-inline-section) 80px;
+}
+.cta_section_container{
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  text-align: center;
+}
+.cta_section_container p{
+  color: white;
+}
+
+/* ! footer */
+
+footer{
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+.footer_container{
+  align-items: start;
+  justify-content: space-between;
+}
+.link_column{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+/* ! subfooter  */
+
+.sub_footer{
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+
+.subfooter_container{
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
